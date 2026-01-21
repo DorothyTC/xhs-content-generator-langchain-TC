@@ -12,7 +12,8 @@ from langchain_openai import ChatOpenAI
 DEEPSEEK_API_KEY = ""  # 填你的 DeepSeek Key
 PROXY_URL = ""
 CONTENT_POOL_FILE = "content_pool.json"
-
+APIFY_API_TOKEN = ""  # 替换为真实Token
+ACTOR_ID = "apify/twitter-scraper"
 # ===================== 状态 =====================
 def init_session_state():
     if "test_mode" not in st.session_state:
@@ -290,4 +291,5 @@ if __name__ == "__main__":
     init_session_state()
     add_test_cases()
     run_streamlit()
+
 
