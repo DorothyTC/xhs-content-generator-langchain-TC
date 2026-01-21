@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 
 # ===================== 配置 =====================
-DEEPSEEK_API_KEY = "sk-713be0cfa8f64cc6be21fff21be8bf7a"  # 填你的 DeepSeek Key
+DEEPSEEK_API_KEY = ""  # 填你的 DeepSeek Key
 PROXY_URL = ""
 CONTENT_POOL_FILE = "content_pool.json"
 
@@ -290,3 +290,4 @@ if __name__ == "__main__":
     init_session_state()
     add_test_cases()
     run_streamlit()
+
